@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Quinto Elemento</title>
+</head>
+<body>
+    <button class="botonera"><a href="index.html">Principal</a></button>
+    <div class="titulos">
+    <header><h1>Quinto Elemento</h1></header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+</div>
+<div class="formulario">
+    <form name="formulario">
+        <h2>Contacto</h2>
+        <input id="nombre" placeholder="Nombre" name="nombre">
+        <input id="apellido" placeholder="Apellido" >
+        <input id="telefono" placeholder="Telefono" >
+        <input type="email" id="email" placeholder="Correo electronico" >
+        <textarea name="mensaje" cols="30" rows="10" placeholder="Escriba aqui su consulta"></textarea>
+        <input type="submit" id="enviar" onclick="validarDatos()">Enviar
+    </form>
+</div>
+<script src="validacion.js"></script>
+</body>
+</html>

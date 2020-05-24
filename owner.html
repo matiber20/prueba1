@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserva.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mostrarDatos"></div>
+
+    <script>
+    function mostrarItem() {
+    var caja = document.querySelector('#mostrarDatos')
+
+    caja.innerHTML='<a href="#" onclick="eliminar()" id="borrarTodo">Borrar todo</a>'
+    for(var i=0; i<localStorage.length; i++) {
+        var id=localStorage.key(i)
+        var valor=localStorage.getItem(id)
+        
+        caja.innerHTML += '<p id="reservas">'+id+' - '+valor+'</p>'
+    }
+
+    
+}
+function eliminar() {
+    localStorage.clear()
+    location.reload()
+    
+}
+window.addEventListener('load', mostrarItem, false)
+    </script>
+</body>
+</html>

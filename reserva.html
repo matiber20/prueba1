@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserva.css">
+    <title>Quinto Elemento</title>
+</head>
+<body>
+    <button class="botonera"><a href="index.html">Principal</a></button>
+    <div class="titulos">
+    <header><h1>Quinto Elemento</h1></header>
+<div class="container">
+    <form name="formulario" id="formulario">
+        <h2>Reserva</h2>
+        <input id="nombre" placeholder="Nombre" name="nombre">
+        <input id="apellido" placeholder="Apellido" >
+        <input id="telefono" placeholder="Telefono" >
+        <input type="email" id="email" placeholder="Correo electronico" >
+        <select id="categoria" class="categoria">
+            <option value="0">Categoria...</option>
+            <option value="Top">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select><br>
+        <label>Fecha de ingreso:</label>
+        <input type="date" id="fecha1">
+        <label>Fecha de egreso:</label>
+        <input type="date" id="fecha2">
+        <textarea id="referencia" name="mensaje" cols="30" rows="10" placeholder="Escriba cualquier consulta o pedido especial aquí"></textarea>
+        <button id="grabar" onclick="validarDatos()">Reservar</button>
+      </form>
+    <div id="mostrarDatos">
+
+    </div>
+</div>
+<script src="reserva.js"></script>
+<script src="validacionreserva.js"></script>
+</body>
+</html>

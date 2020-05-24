@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+}
+
+.botonera {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 5%;
+    right: 5%;
+    z-index: 5;
+    border-radius: 30px;
+    font-size: 2em;
+    background-color: #151519;
+    border: none;
+    transition: 1s;
+}
+
+.botonera:hover {
+    background-color: #151519c0;
+    color: chartreuse;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.botonera a{
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+
+.botonera:focus{
+    outline: none;
+}
+
+.botonera1 {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 17%;
+    right: 5%;
+    z-index: 5;
+    border-radius: 30px;
+    font-size: 2em;
+    background-color: #151519;
+    border: none;
+    transition: 1s;
+}
+
+.botonera1:hover {
+    background-color: #151519c0;
+    color: chartreuse;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.botonera1 a{
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+
+.botonera1:focus{
+    outline: none;
+}
+
+#btn_video {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    left: 1%;
+    top: 1%;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+}
+
+#btn_video button{
+    border-radius: 10px;
+    outline: none;
+    margin-top: 3px;
+    font-size: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+#btn_video button:hover{
+    background-color: rgb(9, 99, 69);
+    color: azure;
+    cursor: pointer;
+}
+
+#btn_video button span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 3px 1px black;
+}
+
+.banner .content p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.caja1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1 .texto1 {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja1 .imagenes {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#seeMore {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.lienzo {
+    display: flex;
+    justify-content: center;
+}
+
+#seeMore a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#seeMore a h3{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    animation-name: subra;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subra {
+    from { text-decoration: none; }
+    to { text-decoration: underline; }
+}
+
+rect#cabeza {
+    animation:cabeza ease 3s infinite;
+}
+
+rect#torzo {
+    animation:torzo ease 3s infinite;
+}
+
+rect#brazoder1 {
+    animation:brazoder1 ease 3s infinite;
+}
+
+rect#brazoizq1 {
+    animation:brazoizq1 ease 3s infinite;
+}
+
+@keyframes cabeza{
+    0% {transform: translate(0,0);}
+    25% {transform: translate(2px, 0);}
+    50% {transform: translate(0, 0);}
+    75% {transform: translate(-2px, 0);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes brazoder1 {
+    0% {transform: translate(-8px,0);}
+    100% {transform: translate(-30px, 45px) rotate(-30deg);
+    }
+}
+
+@keyframes brazoizq1 {
+    0% {transform: translate(0,0);}
+    100% {transform: translate(15px,-10px) rotate(10deg);
+    }
+}
+
+
+#lienzo1{
+    background-color: seashell;
+}
+
+#video2 {
+    width: 80%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+#lienzo2{
+    background-color: lavender;
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(25%);
+}
+
+#titulos {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+#titulos p{
+    margin-bottom: 10%;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Fin de Pantalla normal*/
+
+/*Inicio responsive mobile*/
+
+@media all and (max-width:599px){
+
+body {
+    width: auto;
+}
+
+#btn_video{
+    display: none;
+}
+
+.content{
+    font-size: 10px;
+}
+
+.botonera1 {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    z-index: 5;
+    border-radius: 30px;
+    font-size: 1.5em;
+    background-color: #151519;
+    border: none;
+    transition: 1s;
+}
+
+.botonera:hover {
+    background-color: #151519c0;
+    color: chartreuse;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+.botonera {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    z-index: 5;
+    border-radius: 30px;
+    font-size: 1.5em;
+    background-color: #151519;
+    border: none;
+    transition: 1s;
+}
+
+.botonera1:hover {
+    background-color: #151519c0;
+    color: chartreuse;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.botonera1 a{
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+
+.caja1{
+    margin-top: 10px;
+    width: auto;
+    height: 300px;
+    display: flex;
+    text-align: center;
+}
+
+.caja1 .texto1 h1{
+    display: none;
+}
+.caja1 .texto1 p{
+    display: none;
+}
+
+.imagenes a img{
+    display: block;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    transform: translateX(150px);
+    margin-left: 10px;
+}
+
+#seeMore{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    position: absolute;
+
+}
+
+svg{
+    display: none;
+    margin: 0;
+}
+
+#lienzo1{
+    transform: scale(0.5);
+}
+
+.lienzo{
+    transform: translateY(100px);
+    height: auto;
+    background-color: lavender;
+}
+
+#video2{
+    display: none;
+}
+
+#titulos{
+    width: 100%;
+    transform: scale(0.5);
+}
+
+.pieDePagina{
+    transform: scale(0.7);
+    
+}
+
+}

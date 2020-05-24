@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="videoStyle.css">
+    <title>Quiento Elemento</title>
+</head>
+<body>
+    <button class="botonera"><a href="reserva.html">Reserva</a></button>
+    <button class="botonera1"><a href="contacto.html">Contacto</a></button>
+    <div class="banner">
+        <video id="videoPrincipal" autoplay muted loop>
+            <source src="video/bariloche1.mp4">
+        </video>
+        <nav id="btn_video">
+            <button id="atras" onclick="saltar(-5)"><span class="icon-backward2"></span></button>
+            <button id="reproducir" onclick="reproducir()"><span class="icon-play3"></span></button>
+            <button id="frenar" onclick="frenar()"><span class="icon-stop2"></span></button>
+            <button id="adelante" onclick="saltar(5)"><span class="icon-forward3"></span></button>
+        </nav>
+        <div class="content">
+            <h1>Quinto Elemento</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias illo facere maxime quasi labore nam dolorum iusto quos est, sunt ut cupiditate, asperiores vel maiores, tempore sed perferendis explicabo rerum laudantium suscipit voluptatibus debitis. Ad quae culpa consequatur, delectus asperiores molestias ea natus quis recusandae accusamus! Laboriosam tenetur dolorum exercitationem.</p>
+        </div>
+    </div>
+    <div class="caja1">
+        <div class="texto1">
+        <h1>Quinto Elemento</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum doloremque repellat optio quos cupiditate libero sint asperiores. Ipsum nulla fugiat recusandae repellat quidem eligendi tempore magni possimus sunt, cupiditate dolorum voluptates nihil ipsa veniam amet deleniti a ex animi vitae? Ipsum architecto quidem commodi doloremque voluptate error consequatur tenetur.
+        </p>
+        <div class="imagenes">
+        <a href="foto/imagen1.jpg" data-lightbox="image-1" data-title="My caption"><img src="foto/imagen1.jpg"></a>
+        <a href="foto/imagen2.jpg" data-lightbox="image-1" data-title="My caption"><img src="foto/imagen2.jpg"></a>
+        <a href="foto/imagen3.jpg" data-lightbox="image-1" data-title="My caption"><img src="foto/imagen3.jpg"></a>
+        <a href="foto/imagen4.jpg" data-lightbox="image-1" data-title="My caption"><img src="foto/imagen4.jpg"></a>
+    </div>   
+    <svg width="30%" height="15%">
+        <rect x='50' y='50' width="30" height="30" rx="30" id="cabeza"></rect>
+        <rect x="62" y="75" width="8" height="40" id="torzo"></rect>
+        <rect x="62" y="110" width="2" height="50" id="piernader1"></rect>
+        <rect x="68" y="110" width="2" height="50" id="piernaizq1"></rect>
+        <rect x="69" y="80" width="2" height="36" id="brazoder1"></rect>
+        <rect x="61" y="80" width="2" height="36" id="brazoizq1"></rect>   
+    </svg>
+</div>
+    </div>
+<div id="seeMore"><a href="hotel.html"><h3>Mas sobre nosotros</h3></a>
+</div>
+    <div class="lienzo">
+    <canvas id="lienzo1" width="500" height="500"><p>Error</p></canvas>
+<div id="titulos">
+    <p id="1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, magni vel ea expedita eum vitae odit aliquid. Quasi, sunt fugit.</p>
+    <p id="2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, omnis!</p>
+</div>
+</div>
+</div>
+<div id="video2">
+<canvas id="lienzo2" width="500" height="300">Upgrade browser</canvas>
+</div>
+<footer>
+    <div class="pieDePagina">
+       <p>Todos los derechos reservados - Matias Berastegui</p>
+    </div>
+</footer>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="botonoera_video.js"></script>
+    <script src="canvas.js"></script>
+    <script src="canvas2.js"></script>
+</body>
+</html>

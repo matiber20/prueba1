@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+width: 100vw;
+height: auto;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+background-image: url('foto/imagen1.jpg');
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.botonera {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 5%;
+    right: 8%;
+    z-index: 5;
+    border-radius: 30px;
+    font-size: 2em;
+    background-color: #151519;
+    border: none;
+    transition: 1s;
+}
+
+.botonera:hover {
+    background-color: #151519c0;
+    color: chartreuse;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.botonera a {
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+
+.botonera:focus {
+    outline: none;
+}
+
+.caja2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.caja2 h1{
+    width: 90%;
+    height: 90%;
+    font-size: 35px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.caja2 .texto2 p {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    visibility: visible;
+}
+
+.tarjetas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetas #tarjeta1 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(191, 216, 206);
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjetas #tarjeta1 p{
+    font-size: 20px;
+}
+
+.tarjetas #tarjeta2 {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(191, 216, 206);
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tarjetas #tarjeta2 p{
+    font-size: 20px;
+}
+
+.tarjetas #tarjeta3 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(191, 216, 206);
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.tarjetas #tarjeta3 p{
+    font-size: 20px;
+}
+
+.fade_in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade_in.appear {
+    opacity: 1;
+}
+
+/*Fin pantalla normal*/
+
+
+@media all and (max-width:599px){
+
+.botonera{
+    transform: scale(0.7);
+    top: 0;
+    right: 0;
+}
+
+.botonera:hover{
+    font-size: 1.5rem;
+}
+
+.caja2{
+height: 50px;
+}
+
+.caja2 h1{
+    transform: scale(0.9);
+    text-shadow: 1px 1px white;
+}
+
+.caja2 .texto2 p{
+    display: none;
+}
+
+.tarjetas{
+    height: auto;
+}
+.tarjetas div{
+    height: auto;
+}
+
+.tarjetas div h3{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.tarjetas div p{
+    display: none;
+}
+
+}
